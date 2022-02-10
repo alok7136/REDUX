@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+</head>
+<link rel="stylesheet" href="calci.css" type="text/css">
+<body>
+    <div class="container">
+        <div class="calci">
+            <input type="text" name="display" id="display">
+            <table>
+                <tr>
+                    <td><button id="button" value="1">1</button></td>
+                    <td><button  id="button" value="2">2</button></td>
+                    <td><button id="button"value="3">3</button></td>
+                    <td><button id="button" value="%">%</button></td>
+                    <td><button id="button" value="sin(" onclick="sin()">Sin</button></td>
+                </tr>
+                <tr>
+                    <td><button id="button" value="4">4</button></td>
+                    <td><button id="button" value="5">5</button></td>
+                    <td><button id="button" value="6">6</button></td>
+                    <td><button id="button" value="*">*</button></td>
+                    <td><button id="button" value="cos(" onclick="cos()">Cos</button></td>
+                </tr>
+                <tr>
+                    <td><button id="button" value="7">7</button></td>
+                    <td><button id="button" value="8">8</button></td>
+                    <td><button id="button" value="9">9</button></td>
+                    <td><button id="button" value="/">/</button></td>
+                    <td><button id="button" value="tan(" onclick="tan()">Tan</button></td>
+                </tr>
+                <tr>
+
+                    <td><button id="button" value="-">-</button></td>
+                    <td><button id="button" value=".">.</button></td>
+                    <td><button id="button" value="+">+</button></td>
+                    <td><button id="button" value="0">0</button></td>
+                    <td><button id="button" value="C" >CE</button></td>
+                </tr>
+                <tr>
+                    <td><button id="button" value="(">(</button></td>
+                    <td><button id="button" value=")">)</button></td>
+                    <td><button id="button" value="b" onclick="back()"><<<</button></td>
+                    <td colspan="2"><button id="button1" value="=">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="calci.js"></script>
+</html>
