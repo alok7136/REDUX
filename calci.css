@@ -1,42 +1,40 @@
-.container{
-    text-align: center;
-    margin-top:10px
+#b1{
+    width: 204px;
+    background-color: black;
+    color: aliceblue;
+    margin: 10px;
 }
-
 table{
     margin: auto;
+    border: #a09b9f;
+    border-width: 10px;
 }
 
 input{
-    border-radius: 15px;
-    border: 2px solid #0d0e0d;
-    font-size:34px;
-    height: 75px;
-    width: 550px;
-    text-indent: 30px;
+    width: 1250px;
+    align-self: center;
+    width: 650;
+    height: 90px;
+    border-radius: 20px;
+    border: solid;
+    color:black;
+    font-weight: bolder;
+    font-size: x-large;
 }
-
-#button{
+button{
     border-radius: 10px;
     font-size: 40px;
     background: #dbc4f5;
-    width: 102px;
+    width: 180px;
     height: 90px;
     margin: 6px;
 }
 
-#button1{
-    border-radius: 15px;
-    font-size: 40px;
-    background: #dbc4f5;
-    width: 220px;
-    height: 90px;
+div{
+    align-content: center;
 }
 
-.calci{ 
-    border: 4px solid #77ecc5;
-    background-color: #a09b9f;
-    padding: 23px;
-    border-radius: 53px;
-    display: inline-block;    
+.container{
+    border: aqua;
+    border-width: 5px;
 }
