@@ -1,5 +1,23 @@
 var text = document.getElementById('display')
+// var btn = document.querySelectorAll('button')
 var selection = 'degree'
+
+// for(item of btn)
+//     {
+//         item.addEventListener('click',(e)=>{
+//             btntext=e.target.value
+//             if(btntext =='')
+//             {
+//                 btntext= '';
+//             }
+
+//             if(btntext=='a,b,c')
+//             {
+//                 btntext='';
+//             }
+//             text.value+=btntext;
+//         });
+//     }
 
 function radian() {
     var selectionvalue = document.getElementById("b1")
