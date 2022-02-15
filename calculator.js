@@ -1,135 +1,94 @@
-var selection = 'radian'
+var text = document.getElementById('display')
+var selection = 'degree'
 
-function degree(){
-  var selectionvalue = document.getElementById("b1")
-  selectionvalue.style = "backgroundColor:red"
-  var selectiondegree = document.getElementById("b2")
-  selectiondegree.style = "font: solid Yellow"
-  selection = "degree"
-  console.log(selection);
+function radian() {
+    var selectionvalue = document.getElementById("b1")
+    selectionvalue.style.backgroundColor = "red"; 
+    var selectiondegree = document.getElementById("b2")
+    selectiondegree.style.background = "black";             
+    selection = "radian"
 }
-
-function radian(){
-  var selectionvalue = document.getElementsByClassName("b1")
-  selectionvalue.style = "font:solid yellow"
-  var selectiondegree = document.getElementsByClassName("b2")
-  selectiondegree.style = "font: solid red"
-  selection = "radian"
+function insert(value) {
+    text.value += value
 }
-
-
-function insert(num){
-  var text = document.getElementById('display') 
-  text.value += num
+function equal() {
+    let x = text.value
+    let y = eval(x)
+    text.value = y
 }
-
-function equal(){
-  var text = document.getElementById('display')
-  let x=text.value
-  let y=eval(x)
-  text.value =y
+function resin() {
+    text.value = text.value * 392.9;
 }
-
-function resin(){
-  var text = document.getElementById('display')
-  text.value = text*392.9;
+function back() {
+    var bk = text.value
+    text.value = bk.substring(0, bk.length - 1)
 }
-
-function back(){
-  var text = document.getElementById('display')
-  text.value= text.substring(0,text.length-1)
+function pii() {
+    text.value = text.value * 22 / 7;
 }
-
-function pii(){
-  var text = document.form.textinput.value
-  document.getElementById('display')= text*22/7;
+function remove() {
+    text.value = ''
 }
-
-function remove(){
-  document.getElementById('display')= ''
-}
-
 function sqr(){
-  document.form.textinput.value*2;
+var sqr = text.value
+text.value = sqr*2;
+}
+function loge() {
+    var loge = text.value
+    text.value = Math.log(loge);
+}
+function rounde() {
+    text.value = Math.round(text.value)
+}
+function per() {
+    text.value = text.value / 100
+}
+function sin(data) {
+    if (selection == "degree") {
+        text.value += data;
+        let disply = data
+        let y = Math.sin(disply)
+        console.log("degree")
+        return (disply.value = y);
+    }
+    else if (selection == "radian") {
+        text.value += data;
+        let disply = data
+        let y = Math.sin(disply * (Math.PI / 180))
+        console.log("radian")
+        return (disply.value = y);
+    }
 }
 
-function loge(){
-  text = document.form.textinput.value
-  document.getElementById('display')= Math.log(text)
+function cos(data) {
+    if (selection == "degree") {
+        text.value += data;     
+        let disply = data
+        let y = Math.cos(disply)
+        console.log("degree")
+        return (disply.value = y);
+    }
+    else if (selection == "radian") {
+        text.value += data;
+        let disply = data
+        let y = Math.cos(disply * (Math.PI / 180))
+        console.log("radian")
+        return (disply.value = y);
+    }
 }
-
-function rounde(){
-  text = document.form.textinput.value
-  document.getElementById('display')= Math.round(text)
+function tan(data) {
+    if (selection == "degree") {
+        text.value += data;     
+        let disply = data
+        let y = Math.tan(disply)
+        console.log("degree")
+        return (disply.value = y);
+    }
+    else if (selection == "radian") {
+        text.value += data;
+        let disply = data
+        let y = Math.tan(disply * (Math.PI / 180))
+        console.log("radian")
+        return (disply.value = y);
+    }
 }
-
-function per(){
-  var text = document.form.textinput.value
-  document.getElementById('display')= text/100
-  }
-
-function sin(data){
-var text=document.getElementById("display")
-text.value+=data;
-let disply = data
-let y=Math.sin(disply)
-console.log(y)
-return  disply.value = y;
-}
-
-function cos(data){
-var text=document.getElementById("display")
-text.value+=data;
-var disply = data
-  let y=Math.cos(disply)
-  console.log(y)
-  return  disply.value = y;
-}
-
-
-
-// {
-//   var text = document.getElementById('display')
-//   text.value+=data
-//   console.log(display.value)
-//   if (selection == "radian"){
-//     display.value = Math.sin(text.value)
-//   }else if (selection == "degree"){
-//     text = Math.sin(text * (Math.PI / 180))
-//   }
-// }
-
-
-// function cos(){
-//   console.log("cos")
-//   var text = document.form.textinput
-//   if (selection == "radian"){
-//     document.getElementById('display')= Math.cos(text)
-//     // document.getElementById('display')= `Cos(${Math.cos(text)}`
-//   } else if (selection == "degree"){
-//     document.getElementById('display')= Math.cos(text * (Math.PI / 180))
-//   }
-//   // return document.form.textinput.value
-// }
-
-// function tan(){
-//   var text = document.form.textinput.value
-//   if (selection == "radian"){
-//     document.getElementById('display')= Math.sin(text)
-//   } else if (selection == "degree"){
-//     document.getElementById('display')= Math.sin(text * (Math.PI / 180))
-//   }
-//   return document.form.textinput.value
-// }
-
-
-// function sininput(value)
-// {
-//   var text=document.form.textinput.value;
-//   display=Math.sin(value*text)
-//   // var text=document.form.textinput.value;
-//   // document.getElementById('display')+= value;
-
-//   // let x = Math.sin(value)
-//   return display;
-// }
