@@ -42,11 +42,9 @@ button{
     height: 90px;
     margin: 6px;
 }
-
 div{
     align-content: center;
 }
-
 .container{
     border: aqua;
     border-width: 5px;
