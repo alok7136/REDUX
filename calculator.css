@@ -1,0 +1,53 @@
+#b1{
+    width: 204px;
+    background-color: black;
+    color: aliceblue;
+    margin: 10px;
+}
+#b2{
+    width: 204px;
+    background-color: black;
+    color: aliceblue;
+    margin: 10px;
+}
+.b3{
+    width: 408px;
+    background-color:greenyellow;
+    color: black;
+    margin: 10px;
+}
+
+table{
+    margin: auto;
+    border: #a09b9f;
+    border-width: 10px;
+}
+
+input{
+    width: 1250px;
+    align-self: center;
+    width: 650;
+    height: 90px;
+    border-radius: 20px;
+    border: solid;
+    color:black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+button{
+    border-radius: 10px;
+    font-size: 40px;
+    background: #dbc4f5;
+    width: 180px;
+    height: 90px;
+    margin: 6px;
+}
+
+div{
+    align-content: center;
+}
+
+.container{
+    border: aqua;
+    border-width: 5px;
+}
