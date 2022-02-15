@@ -1,7 +1,6 @@
 var text = document.getElementById('display')
-// var btn = document.querySelectorAll('button')
+var btn = document.querySelectorAll('button')
 var selection = 'degree'
-
 // for(item of btn)
 //     {
 //         item.addEventListener('click',(e)=>{
@@ -26,6 +25,15 @@ function radian() {
     selectiondegree.style.background = "black";             
     selection = "radian"
 }
+
+function degree() {
+    var selectionvalue = document.getElementById("b1")
+    selectionvalue.style.backgroundColor = "black"; 
+    var selectiondegree = document.getElementById("b2")
+    selectiondegree.style.background = "red";             
+    selection = "degree"
+}
+
 function insert(value) {
     text.value += value
 }
@@ -34,26 +42,42 @@ function equal() {
     let y = eval(x)
     text.value = y
 }
-function resin() {
-    text.value = text.value * 392.9;
+function resin(data) {
+    text.value += data;     
+    let disply = data
+    let y = disply*392.9;
+    console.log(y)
+    return (disply.value = y);
 }
 function back() {
     var bk = text.value
     text.value = bk.substring(0, bk.length - 1)
 }
-function pii() {
-    text.value = text.value * 22 / 7;
+function pi(data) {
+    text.value += data;     
+    let disply = data
+    let y = disply*(22/7);
+    console.log(y)
+    return (disply.value = y);
 }
 function remove() {
     text.value = ''
 }
-function sqr(){
-var sqr = text.value
-text.value = sqr*2;
+
+function sqr(data){
+    text.value += data;     
+    let disply = data
+    let y = disply*disply;
+    console.log(y)
+    return (disply.value = y);
 }
-function loge() {
-    var loge = text.value
-    text.value = Math.log(loge);
+
+function log(data) {
+    text.value += data;
+    let disply = data
+    let y = Math.log(disply)
+    console.log("degree")
+    return (disply.value = y);
 }
 function rounde() {
     text.value = Math.round(text.value)
